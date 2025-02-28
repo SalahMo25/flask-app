@@ -1,0 +1,58 @@
+<h2>Patient Form</h2>
+
+    <form method="POST" action="{{ url_for('signup') }}">
+
+        {{ form.hidden_tag() }}
+        <h3> Please Enter Unique ID</h3>
+        <div class="form-group">
+            {{ form.username.label (class="form-control-label") }}
+            {{ form.username(class="form-control") }}
+
+        </div>
+
+        <div class="form-group">
+            {{ form.email.label (class="form-control-label") }}
+            {{ form.email(class="form-control") }}
+
+        </div>
+        <div class="form-group">
+            {{ form.password.label (class="form-control-label") }}
+            {{ form.password(class="form-control") }}
+
+        </div>
+        <div class="form-group">
+            {{ form.confirm_password.label (class="form-control-label") }}
+            {{ form.confirm_password(class="form-control") }}
+
+        </div>
+        <div class="form-group">
+            {{ form.first_name.label (class="form-control-label") }}
+            {{ form.first_name(class="form-control") }}
+
+        </div>
+        <div class="form-group">
+            {{ form.last_name.label (class="form-control-label") }}
+            {{ form.last_name(class="form-control") }}
+
+        </div>
+
+        <div class="form-group">
+            {{ form.uniqe_id.label (class="form-control-label") }}
+            {{ form.uniqe_id(class="form-control") }}
+
+        </div>
+
+
+        <div class="form-group">
+            {{ form.birth_day.label (class="form-control-label") }}
+            {{ form.birth_day(class="form-control") }}
+
+        </div>
+
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+
+        </div>
+
+
+    </form>
